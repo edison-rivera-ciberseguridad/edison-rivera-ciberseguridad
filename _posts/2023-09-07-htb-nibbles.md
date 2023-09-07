@@ -32,7 +32,7 @@ c. Al ver el código fuente de la página web inicial, veremos una directorio po
 ![](/assets/images/HTB/Easy/Nibbles/03-leak.png)
 
 
-* El sitio web está levantado con **`NibbleBlog`** y podemos ver su código fuente en **`Github`** [NibbleBlog](https://github.com/dignajar/nibbleblog). Esto es un gran alternativa a realizar fuzzing y dejar varios logs.
+* El sitio web está levantado con **`NibbleBlog`** y podemos ver su código fuente en **`Github`** [NibbleBlog](https://github.com/dignajar/nibbleblog). Con esto podemos evitarnos realizar fuzzing.
 
 
 * El directorio **`content`** contiene el directorio **`/private`** en el cual existe un fichero **`users.xml`**
@@ -42,17 +42,15 @@ c. Al ver el código fuente de la página web inicial, veremos una directorio po
     <SNIP>
     ```
 
-
-d. En el repositorio vemos un fichero **`admin.php`**, este es un panel de login, pero, al no poseer la contraseña de admin, probamos con palabras comunes
+d. En el repositorio vemos un fichero **`admin.php`**, que es un panel de login, pero, al no poseer la contraseña del usuario **admin**, probamos con palabras comunes
 
 * **`admin:admin`, `admin:password`, `admin:nibbles`**
 
-e. Una vez autenticados, iremos al apartado de **`Plugins -> My Image`**, aquí podremos subir una imagen. Intentamos subir un fichero **`php`** con el contenido **`<?php system($_GET["cmd"]); ?>`**
+e. Una vez autenticados, iremos al apartado de **`Plugins -> My Image`**. Intentamos subir un fichero **`php`** con el contenido **`<?php system($_GET["cmd"]); ?>`**
 
 * Como nos fijamos, no existe ningun tipo de sanitización por lo que la 'imagen' se subió normalmente, para verla nos iremos a la siguiente ruta **`http://<IP>/nibbleblog/content/private/plugins/my_image/`**.
 
     ![](/assets/images/HTB/Easy/Nibbles/05-file_upload.png)
-
 
 * Una vez garantizada la ejecución remota de comandos, entablamos una reverse shell.
 
