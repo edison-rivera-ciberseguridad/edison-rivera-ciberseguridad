@@ -13,6 +13,7 @@ image:
 ---
 
 Máquina Linux de nivel **Easy** de HackThBox.
+
 Ténicas usadas: **File Upload, Abuso de Sudoers**
 
 
