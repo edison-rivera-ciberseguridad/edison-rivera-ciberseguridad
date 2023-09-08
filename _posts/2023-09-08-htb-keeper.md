@@ -12,6 +12,10 @@ image:
   alt: Keeper Machine Logo
 ---
 
+Máquina Linux de nivel **Easy** de HackThBox.
+
+Técnicas usadas: **Default Credentials, Keepass Dump (CVE-2023-32784)**
+
 ### Fase de Reconocimiento 🧣
 
 a. Enumeramos los puertos que están abiertos en la **`Máquina Keeper`**
@@ -100,7 +104,7 @@ b. Extraemos el hash del fichero **.kdbx** (**`keepass2john passcodes.kdbx > has
     17.:    e, 
     Combined: ●{ø, Ï, ,, l, `, -, ', ], §, A, I, :, =, _, c, M}dgrød med fløde
     ```
-    > El primer caracter no fue capaz de extraerse y el segundo puede ser cualquiera entre **{ø, Ï, ,, l, `, -, ', ], §, A, I, :, =, _, c, M}**
+    > El primer carácter no fue capaz de extraerse y el segundo puede ser cualquiera entre **{ø, Ï, ,, l, `, -, ', ], §, A, I, :, =, _, c, M}**
 
 
     > En caso de obtener un error al ejecutar el comando anterior, modificamos el fichero **`keepass_password_dumper.csproj`** con esto:
@@ -155,7 +159,7 @@ root@kali> puttygen file.ppk -O private-openssh -o id_rsa
 root@kali> chmod 600 id_rsa
 ```
 
-c. La clave **`id_rsa`** nos sirve para autenticarnos en el servicio **`SSH`** como el usuario root
+c. La clave **id_rsa** nos sirve para autenticarnos en el servicio **SSH** como el usuario root
 
 ```bash
 root@kali> ssh root@<IP Keeper> -i id_rsa
