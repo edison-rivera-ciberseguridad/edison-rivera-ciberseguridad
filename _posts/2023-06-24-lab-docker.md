@@ -151,7 +151,8 @@ Al usar volúmenes podemos **montar** archivos de nuestra máquina local en el c
 
 Supongamos que necesitamos pasar toda un directorio al contenedor
 
-   * **Directorio Local 'Test'** 📁 
+   * **Directorio Local 'Test'** 📁
+
     ```bash
     -rw-r--r-- 1 root root      32 Jun 14 22:53 clave_simetrica_original.txt
     -rw-r--r-- 1 root root 1173440 Jun 14 22:29 ElPrincipito.enc
