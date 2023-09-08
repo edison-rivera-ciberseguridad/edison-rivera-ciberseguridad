@@ -1,7 +1,7 @@
 ---
 title: Laboratorio - Open Redirect
 author: cotes
-date: 2023-09-07 17:51:00 +0800
+date: 2023-06-25 17:51:00 +0800
 categories: [Laboratorio, 'Open Redirect']
 tags: ['Open Redirect', OWASP]
 math: true
