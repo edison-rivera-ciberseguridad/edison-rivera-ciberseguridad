@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   Posts sobre ciberseguridad, técnicas y writeups de HackTheBox y Vulnhub.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://testing01019.github.io/"
 
 github:
   username: edisonrivera # change to your github username
@@ -79,7 +79,7 @@ img_cdn:
 avatar: "/assets/avatar.png"
 
 # boolean type, the global switch for TOC in posts.
-toc: true
+toc: false
 
 comments:
   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable

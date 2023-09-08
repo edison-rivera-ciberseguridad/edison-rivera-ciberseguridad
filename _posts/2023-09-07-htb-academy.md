@@ -13,6 +13,7 @@ image:
 ---
 
 Máquina Linux de nivel **Easy** de HackThBox.
+Técnicas usadas: **Laravel Exploitation, Information Leakage**
 
 ### Fase de Reconocimiento 🧣
 
