@@ -12,7 +12,7 @@ image:
   alt: Vikings Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de Vulnhub.
 
 Técnicas usadas: **Information Leakage, Criptografía, Rpyc**
 
