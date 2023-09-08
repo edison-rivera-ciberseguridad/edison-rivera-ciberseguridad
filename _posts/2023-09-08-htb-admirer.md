@@ -3,7 +3,7 @@ title: HackTheBox - Admirer
 author: cotes
 date: 2023-09-06 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Windows, IIS, MS11-046, Misconfiguration]
+tags: [Linux, 'Adminer 4.6.2', 'Python Path Hijacking']
 math: true
 mermaid: true
 image:
@@ -14,7 +14,7 @@ image:
 
 Máquina Linux de nivel **Easy** de HackThBox.
 
-Técnicas usadas: **IIS, MS11-046, Misconfiguration**
+Técnicas usadas: **Adminer 4.6.2, Python Path Hijacking**
 
 ### Fase de Reconocimiento 🧣
 
