@@ -3,7 +3,7 @@ title: HackTheBox - Toolbox
 author: cotes
 date: 2023-09-06 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Windows, 'Default Credentials', 'SQL Injection, 'Docker Toolbox']
+tags: [Windows, 'Default Credentials', 'SQL Injection', 'Docker Toolbox']
 math: true
 mermaid: true
 image:
