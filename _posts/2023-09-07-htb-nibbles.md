@@ -1,5 +1,5 @@
 ---
-title: HackTheBox | Nibbles
+title: HackTheBox - Nibbles
 author: cotes
 date: 2023-09-07 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
