@@ -3,7 +3,7 @@ title: HackTheBox - Academy
 author: cotes
 date: 2023-09-07 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Linux, Laravel]
+tags: [Linux, Laravel, 'Information Leakage']
 math: true
 mermaid: true
 image:
