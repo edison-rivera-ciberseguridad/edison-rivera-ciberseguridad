@@ -146,6 +146,7 @@ icex64@LupinOne:~$ find / -writable 2>/dev/null | grep -vE "^/proc|^/sys"
   import os
   os.system("bash")
   ```
+
   > Esto con el fin de que al momento de ejecutar el script **heist.py**, el comando sea ejecutado por el usuario **`arsene`** y esto nos daría una bash.
 
 
