@@ -96,5 +96,5 @@ bash-4.3# whoami
 root
 ```
 
-> Con esto hemos vulnerado la `Máquina Nibbles`
+> Con esto hemos vulnerado la `Máquina Nibbles` 🎉
 {: .prompt-tip }
