@@ -9,7 +9,7 @@ mermaid: true
 image:
   path: /assets/images/Laboratorios/shellshock/logo.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Open Redirect Logo
+  alt: ShellShock Logo
 ---
 
 Esta vulnerabilidad afecta a bash antiguas y se aprovecha del funcionamiento de CGI. CGI permite ejecutar scripts externos, usualmente escritos en bash, cmd, perl y cgi, permitiendo a un atacante ejecutar comandos modificando la cabecera User-Agent en una petición enviada al servidor
