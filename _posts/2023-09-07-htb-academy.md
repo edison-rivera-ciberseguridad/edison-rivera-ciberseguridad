@@ -20,7 +20,7 @@ a. Enumeramos los puertos que están abiertos en la **`Máquina Academy`**
 
 * **`nmap -p- -sS -Pn -n <IP> -oG puertos`**
 
-    ![](/assets/images/Machines/Academy/01-ports.png)
+    ![](/assets/images/HTB/Easy/Academy/01-ports.png)
 
 b. Vemos las versiones de los servicios que se están ejecutando en los puertos abiertos
 
@@ -32,13 +32,11 @@ b. Vemos las versiones de los servicios que se están ejecutando en los puertos 
     <SNIP>
     ```
 
-    * Tenemos un dominio, el cual debemos guardar en el archivo **`/etc/hosts`**  para indicar que la **IP de la Máquina** resuelva a **`http://academy.htb/`**
+    > Tenemos un dominio, el cual debemos guardar en el archivo **`/etc/hosts`** para indicar que la **IP de la Máquina Academy** resuelva a **`http://academy.htb/`**.
+    {: .prompt-info }
 
-        ```
-        <IP>    academy.htb
-        ```
 
-c. Si vistamos el servicio web, vemos que nos podemos **`Registrar`** o **`Loguear`**, por lo que enumeraremos por más archivos **`.php`** que puedan existir
+c. Si vistamos el servicio web, podemos **`Registrarnos`** o **`Loguearnos`**, por lo que enumeraremos por más archivos **`.php`** que puedan existir
 
 ```pl
 wfuzz -c -t 10 --hc=404 -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-medium.txt http://academy.htb/FUZZ.php
@@ -58,7 +56,7 @@ d. Si capturamos la petición de **`registrar`** con **`Burp Suite`** veremos qu
 
 e. Nos autenticamos en **`/admin.php`** y veremos un subdominio, también lo agregamos al **`/etc/hosts`**
 
-![](/assets/images/Machines/Academy/02-subdomain.png)
+![](/assets/images/HTB/Easy/Academy/02-subdomain.png)
 
 
 f. Si visitamos el nuevo subdominio, veremos un error de Laravel, del cual podemos extraer la **`APP_KEY`** (Variable de configuración utilizada para mantener segura la información sensible, como las sesiones, las cookies y otras características de seguridad)
