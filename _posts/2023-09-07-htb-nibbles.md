@@ -37,7 +37,6 @@ c. Al ver el código fuente de la página web inicial, veremos una directorio po
 
 * El sitio web está levantado con **`NibbleBlog`** y podemos ver su código fuente en **`Github`** [NibbleBlog](https://github.com/dignajar/nibbleblog). Con esto podemos evitarnos realizar fuzzing.
 
-
 * El directorio **`content`** contiene el directorio **`/private`** en el cual existe un fichero **`users.xml`**
 
     ```xml
