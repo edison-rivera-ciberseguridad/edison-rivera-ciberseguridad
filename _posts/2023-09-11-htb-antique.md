@@ -3,7 +3,7 @@ title: HackTheBox - Antique
 author: cotes
 date: 2023-09-06 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Linux, 'SNMP Enumeration', 'Pwnkit (CVE-2021-4034)', 'DirtyPipe (CVE-2022-0847)', 'RCE (CVE:2015-1158)']
+tags: [Linux, 'SNMP Enumeration', 'Pwnkit (CVE-2021-4034)', 'DirtyPipe (CVE-2022-0847)', 'Cups (CVE-2012-5519)']
 math: true
 mermaid: true
 image:
