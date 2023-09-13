@@ -12,6 +12,11 @@ image:
   alt: Servmon Machine Logo
 ---
 
+Máquina Linux de nivel **Easy** de HackThBox.
+
+Técnicas usadas: **Information Leakeage, RCE Webmin (CVE-2019-12840)**
+
+
 ### Fase de Reconocimiento 🧣
 
 a. Enumeramos los puertos que están abiertos.
