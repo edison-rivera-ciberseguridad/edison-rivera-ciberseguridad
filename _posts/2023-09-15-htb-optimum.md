@@ -3,7 +3,7 @@ title: HackTheBox - Optimum
 author: cotes
 date: 2023-09-14 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Linux, 'HttpFileServer RCE (CVE-2014-6287)', 'Cracking WPA/WPA2 Password']
+tags: [Windows, 'HttpFileServer RCE (CVE-2014-6287)', 'Cracking WPA/WPA2 Password']
 math: true
 mermaid: true
 image:
@@ -12,7 +12,7 @@ image:
   alt: Optimum Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Windows de nivel **Easy** de HackThBox.
 
 Técnicas usadas: **HttpFileServer RCE (CVE-2014-6287), Cracking WPA/WPA2 Password**
 
