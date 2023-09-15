@@ -92,7 +92,7 @@ netadmin@wifinetic:~$ getcap -r / 2>/dev/null
 /usr/bin/reaver = cap_net_raw+ep
 ```
 
-> **Reaver** es una herramienta usado para pentesting en redes que tienen habilitado el protocolo WPA/WPA2
+> **Reaver** es una herramienta usada para pentesting en redes que tienen habilitado el protocolo WPA/WPA2
 {: .prompt-info }
 
 b. Para usar esta herramienta necesitamos una interfaz de red en modo monitor 'mon0', la dirección MAC y el canal en el cual opera esta interfaz
