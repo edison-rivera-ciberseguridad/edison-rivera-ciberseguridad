@@ -3,7 +3,7 @@ title: HackTheBox - Wifinetic
 author: cotes
 date: 2023-09-14 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Linux, 'Information Leakage', '']
+tags: [Linux, 'Information Leakage', 'Cracking WPA/WPA2 Password']
 math: true
 mermaid: true
 image:
@@ -14,7 +14,7 @@ image:
 
 Máquina Linux de nivel **Easy** de HackThBox.
 
-Técnicas usadas: **Information Leakage, Wordpress Drafts (CVE-2019-17671), ByPass Bot Restriction, Polkit (CVE-2021-3560)**
+Técnicas usadas: **Information Leakage, Cracking WPA/WPA2 Password**
 
 ### Fase de Reconocimiento 🧣
 
