@@ -3,7 +3,7 @@ title: HackTheBox - Servmon
 author: cotes
 date: 2023-09-12 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Linux, 'Information Leakeage', 'RCE Webmin (CVE-2019-12840)']
+tags: [Linux, 'Information Leakage', 'RCE Webmin (CVE-2019-12840)']
 math: true
 mermaid: true
 image:
@@ -14,7 +14,7 @@ image:
 
 Máquina Linux de nivel **Easy** de HackThBox.
 
-Técnicas usadas: **Information Leakeage, RCE Webmin (CVE-2019-12840)**
+Técnicas usadas: **Information Leakage, RCE Webmin (CVE-2019-12840)**
 
 
 ### Fase de Reconocimiento 🧣
