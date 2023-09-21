@@ -3,7 +3,7 @@ title: HackTheBox - Shoppy
 author: cotes
 date: 2023-09-20 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Linux, 'NoSQL Injection', 'Cracking Password', 'Leak Information', 'Docker Abusing']
+tags: [Linux, 'NoSQL Injection', 'Cracking Password', 'Information Leakage', 'Docker Abusing']
 math: true
 mermaid: true
 image:
@@ -14,7 +14,7 @@ image:
 
 Máquina Linux de nivel **Easy** de HackThBox.
 
-Técnicas usadas: **NoSQL Injection, Cracking Password, Leak Information, Docker Abusing**
+Técnicas usadas: **NoSQL Injection, Cracking Password, Information Leakage, Docker Abusing**
 
 ### Fase de Reconocimiento 🧣
 
