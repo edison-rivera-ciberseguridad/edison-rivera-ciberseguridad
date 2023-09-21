@@ -3,7 +3,7 @@ title: HackTheBox - Precious
 author: cotes
 date: 2023-09-20 17:51:00 +0800
 categories: [Writeup, HackTheBox, Easy]
-tags: [Linux, 'RCE pdfkit 0.8.6 (CVE-2022-25765)', 'Information Leakage', 'Leak Information', 'YAML Deserialization']
+tags: [Linux, 'RCE pdfkit 0.8.6 (CVE-2022-25765)', 'Information Leakage', 'YAML Deserialization']
 math: true
 mermaid: true
 image:
