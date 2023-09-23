@@ -12,7 +12,7 @@ image:
   alt: Bounty Machine Logo
 ---
 
-Máquina Windows de nivel **Easy** de HackThBox.
+Máquina Windows de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **File Upload, SeImpersonatePrivilege (Juicy Potato)**
 

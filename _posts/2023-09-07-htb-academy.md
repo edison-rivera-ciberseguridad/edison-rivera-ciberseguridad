@@ -12,7 +12,7 @@ image:
   alt: Academy Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **Laravel Exploitation, Information Leakage**
 

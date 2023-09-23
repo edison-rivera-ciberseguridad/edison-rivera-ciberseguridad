@@ -12,7 +12,7 @@ image:
   alt: Shoppy Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **NoSQL Injection, Cracking Password, Information Leakage, Docker Abusing**
 

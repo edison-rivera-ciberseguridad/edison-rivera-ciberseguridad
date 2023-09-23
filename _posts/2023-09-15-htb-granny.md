@@ -12,7 +12,7 @@ image:
   alt: Granny Machine Logo
 ---
 
-Máquina Windows de nivel **Easy** de HackThBox.
+Máquina Windows de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **ISS Misconfiguration, Token Kidnapping Local Privilege Escalation (churrasco.exe)**
 

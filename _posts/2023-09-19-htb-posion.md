@@ -12,7 +12,7 @@ image:
   alt: Poison Machine Logo
 ---
 
-Máquina Linux de nivel **Medium** de HackThBox.
+Máquina Linux de nivel **Medium** de HackTheBox.
 
 Técnicas usadas: **LFI to RCE, Log Poisoning, Local Port Forwarding, VNC Abusing**
 

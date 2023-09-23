@@ -12,7 +12,7 @@ image:
   alt: Optimum Machine Logo
 ---
 
-Máquina Windows de nivel **Easy** de HackThBox.
+Máquina Windows de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **HttpFileServer RCE (CVE-2014-6287), MS16-098**
 

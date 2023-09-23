@@ -12,7 +12,7 @@ image:
   alt: Precious Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **RCE pdfkit 0.8.6 (CVE-2022-25765), Information Leakage, Leak Information, YAML Deserialization**
 

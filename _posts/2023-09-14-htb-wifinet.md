@@ -12,7 +12,7 @@ image:
   alt: Wifinetic Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **Information Leakage, Cracking WPA/WPA2 Password**
 

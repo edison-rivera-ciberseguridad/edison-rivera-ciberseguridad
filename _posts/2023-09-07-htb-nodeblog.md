@@ -12,7 +12,7 @@ image:
   alt: Nodeblog Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **SSTI, NoSQL Injection, Prototype Pollution**
 

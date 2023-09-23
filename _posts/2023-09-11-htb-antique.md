@@ -12,7 +12,7 @@ image:
   alt: Antique Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **Linux, SNMP Enumeration, Pwnkit (CVE-2021-4034), DirtyPipe (CVE-2022-0847), Cups (CVE-2012-5519)**
 

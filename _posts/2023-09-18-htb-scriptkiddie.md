@@ -12,7 +12,7 @@ image:
   alt: ScriptKiddie Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **msfvenom Command Injection (CVE-2020-7384), Command Injection, Binary Abusing**
 

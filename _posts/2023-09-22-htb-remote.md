@@ -12,7 +12,7 @@ image:
   alt: Remote Machine Logo
 ---
 
-Máquina Windows de nivel **Easy** de HackThBox.
+Máquina Windows de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **Information Leakage, Team Viewer Exploitation, PrintSpoofer**
 

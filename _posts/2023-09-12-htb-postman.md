@@ -12,7 +12,7 @@ image:
   alt: Postman Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **Redis Exploitation, RCE Webmin (CVE-2019-12840)**
 

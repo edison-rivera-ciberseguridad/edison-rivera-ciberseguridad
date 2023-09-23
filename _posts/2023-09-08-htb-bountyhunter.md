@@ -12,7 +12,7 @@ image:
   alt: BountyHunter Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **XXE, Python Exploitation**
 

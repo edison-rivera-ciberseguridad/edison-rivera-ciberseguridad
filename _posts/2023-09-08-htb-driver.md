@@ -12,7 +12,7 @@ image:
   alt: Driver Machine Logo
 ---
 
-Máquina Windows de nivel **Easy** de HackThBox.
+Máquina Windows de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **File Upload (scf), PrintNightmare (CVE-2021-1675)**
 

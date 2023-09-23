@@ -12,7 +12,7 @@ image:
   alt: MonitorsTwo Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **RCE (CVE-2022-46169), Docker Breakout (CVE-2021-41091)**
 

@@ -12,7 +12,7 @@ image:
   alt: Nibbles Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Ténicas usadas: **File Upload, Abuso de Sudoers**
 

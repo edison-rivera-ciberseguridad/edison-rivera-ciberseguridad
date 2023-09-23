@@ -12,7 +12,7 @@ image:
   alt: Grandpa Machine Logo
 ---
 
-Máquina Windows de nivel **Easy** de HackThBox.
+Máquina Windows de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **ISS 6.0 (CVE-2017-7269), Token Kidnapping Local Privilege Escalation (churrasco.exe)**
 

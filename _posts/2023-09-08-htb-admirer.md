@@ -12,7 +12,7 @@ image:
   alt: Admirer Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **Adminer 4.6.2, Python Path Hijacking**
 

@@ -12,7 +12,7 @@ image:
   alt: Traverxec Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de HackThBox.
+Máquina Linux de nivel **Easy** de HackTheBox.
 
 Técnicas usadas: **RCE (CVE-2019-16278), Information Leakage, Misconfiguration**
 
