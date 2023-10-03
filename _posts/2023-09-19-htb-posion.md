@@ -3,7 +3,7 @@ title: HackTheBox - Poison
 author: cotes
 date: 2023-09-19 17:51:00 +0800
 categories: [Writeup, HackTheBox, Medium]
-tags: [Linux, 'LFI to RCE', 'Log Poisoning', 'Local Port Forwarding', 'VNC Abusing']
+tags: [Linux, 'LFI to RCE', 'Log Poisoning', 'Local Port Forwarding (SSH)', 'VNC Abusing']
 math: true
 mermaid: true
 image:
