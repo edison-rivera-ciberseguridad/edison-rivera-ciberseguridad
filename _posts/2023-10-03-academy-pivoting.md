@@ -3,7 +3,7 @@ title: Academy - Starting Our Tunnels
 author: cotes
 date: 2023-10-03 17:51:00 +0800
 categories: [Laboratorio, Pivoting]
-tags: [Pivoting]
+tags: [Pivoting, socat, 'Local Port Forwarding (SSH)', 'Dinamyc Port Forwarding (SSH)']
 math: true
 mermaid: true
 image:
