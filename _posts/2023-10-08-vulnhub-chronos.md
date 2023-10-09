@@ -1,7 +1,7 @@
 ---
 title: Vulnhub - Chronos
 author: cotes
-date: 2023-09-06 17:51:00 +0800
+date: 2023-10-08 17:51:00 +0800
 categories: [Writeup, Vulnhub, Medium]
 tags: [Linux, 'Inyección de Comandos', 'RCE (CVE-2020-7699)']
 math: true
