@@ -188,3 +188,5 @@ root@kali~/.ssh> ssh administrator@10.10.10.236
 Microsoft Windows [Version 10.0.17763.1039] 
 administrator@TOOLBOX C:\Users\Administrator>
 ```
+
+
