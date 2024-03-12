@@ -92,8 +92,8 @@ d. Decodeamos el JWT en [JWT.io](https://jwt.io/)
 
   ![](/assets/images/Vulnyx/Easy/Plex/03-jwt.png)
 
-    > Tenemos las credenciales de `mauro:m@uR0123!`
-    {: .prompt-tip }
+> Tenemos las credenciales de `mauro:m@uR0123!`
+{: .prompt-tip }
 
 
 ### Escalada de Privilegios 💹
