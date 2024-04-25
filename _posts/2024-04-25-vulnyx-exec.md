@@ -1,7 +1,7 @@
 ---
 title: Vulnyx - Exec
 author: estx
-date: 2024-04025 17:51:00 +0800
+date: 2024-04-25 17:51:00 +0800
 categories: [Writeup, Vulnyx, Low]
 tags: [Linux, 'SMB', 'File Upload' , 'binary abusing']
 math: true
