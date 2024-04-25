@@ -80,7 +80,7 @@ smb: \> ls
 ?>
 ```
 
-> La función `system` nos permite ejecutar comandos en el sistema. Con **`$_GET['cmd']`** lo que hacemos es indicar que el comando que se va a ejecutar lo indicaremos desde la **URL**. **Ej.** http://192.168.100.63/secret.php?cmd=<COMANDO>
+> La función `system` nos permite ejecutar comandos en el sistema. Con **`$_GET['cmd']`** lo que hacemos es indicar que el comando que se va a ejecutar lo indicaremos desde la **URL**. **Ej.** http://192.168.100.63/secret.php?cmd=[COMANDO]
 {: .prompt-info }
 
 * Por último, subimos el archivo **secret.php** al servicio SMB con **`put secret.php`**
