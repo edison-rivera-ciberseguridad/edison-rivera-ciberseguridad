@@ -12,7 +12,7 @@ image:
   alt: Plex Machine Logo
 ---
 
-Máquina Linux de nivel **Easy** de Vulnhub.
+Máquina Linux de nivel **Easy** de Vulnyx.
 
 Técnicas usadas: **Multiplexing Ports, Mutt**
 
@@ -140,9 +140,9 @@ Generating public/private rsa key pair.
 ```bash
 root@plex:~# mkdir .ssh
 root@plex:~# cd .ssh/
-root@plex:~/.ssh# touch authorized-keys
+root@plex:~/.ssh# touch authorized_keys
 
-root@plex:~/.ssh# echo -n 'ssh-rsa ...' > authorized-keys
+root@plex:~/.ssh# echo -n 'ssh-rsa ...' > authorized_keys
 ```
 
 b. Y ahora ya podemos autenticarnos directamente como **root** por SSH
