@@ -1,7 +1,7 @@
 ---
 title: Vulnyx - Hook
 author: estx
-date: 2024-03-11 17:51:00 +0800
+date: 2024-04-25 16:41:00 +0800
 categories: [Writeup, Vulnyx, Easy]
 tags: [Linux, 'htmLawed', 'CVE-2022-35914' , 'abuse of privileges']
 math: true
