@@ -27,6 +27,7 @@ root@kali> arp-scan -I eth0 --local --ignoredups
 <SNIP>
 192.168.100.64	08:00:27:c6:4f:1d	PCS Systemtechnik GmbH
 ```
+
 > Con esto identificamos todos los dispositivos en nuestra red local.
 
 a. Enumeramos los puertos que están abiertos.
@@ -46,13 +47,13 @@ b. Vemos las versiones de los servicios que se están ejecutando
 c. Si investigamos más sobre **htmLawed** llegamos a este [post](https://mayfly277.github.io/posts/GLPI-htmlawed-CVE-2022-35914/) en el que nos mencionar el **CVE-2022-35914**. El directorio al que acceden es `/vendor/htmlawed/htmLawed/htmLawedTest.php`, sin embargo, si nos fijamos, el directorio listado en el archivo **robots.txt** es **htmLawed** por lo que podemos intuir que únicamente debemos visitar el fichero  **htmLawedTest.php**.
 
 
-  ![](/assets/images/Vulnyx/Easy/Hook/03-url.png)
+![](/assets/images/Vulnyx/Easy/Hook/03-url.png)
 
 * Si seguimos las indicaciones del [post](https://mayfly277.github.io/posts/GLPI-htmlawed-CVE-2022-35914/), veremos que podemos modificar un hook con el fin de ejecutar comandos
 
-  ![](/assets/images/Vulnyx/Easy/Hook/04-config.png)
+    ![](/assets/images/Vulnyx/Easy/Hook/04-config.png)
 
-  ![](/assets/images/Vulnyx/Easy/Hook/05-output.png)
+    ![](/assets/images/Vulnyx/Easy/Hook/05-output.png)
 
 
 d. Nos entablamos una reverse shell
@@ -131,7 +132,7 @@ User noname may run the following commands on hook:
 
 * Al investigar una forma de ejecutar comando en Elixir obtenemos esto:
 
-```elixir
+```bash
 System.cmd("whoami", [])  -> Comando sin argumentos
 System.cmd("ls", ["la"]) -> Comando con argumentos
 ```
@@ -139,7 +140,7 @@ System.cmd("ls", ["la"]) -> Comando con argumentos
 
 4. Lo que haremos es otorgar permiso **SUID** a la `/bin/bash` y, como este comando lo ejecutaremos como root, cualquier usuario podrá spawnear una bash como el usuario root sin necesidad de otorgar una contraseña
 
-```elixir
+```bash
 iex(1)> System.cmd("chmod", ["+s", "/bin/bash"])
 {"", 0} -> El `0` nos indica que el comando se ejecutó exitosamente
 ```
