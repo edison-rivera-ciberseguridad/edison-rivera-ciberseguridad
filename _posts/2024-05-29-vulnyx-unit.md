@@ -30,7 +30,7 @@ root@kali> arp-scan -I eth0 --local --ignoredups
 a. Enumeramos los puertos que están abiertos.
 
 ```bash
-❯ nmap -p- -sS --min-rate 5000 -Pn -n 192.168.100.68 -oG ports
+❯ nmap -p- -sS --min-rate 5000 -Pn -n 192.168.100.69 -oG ports
 
 PORT     STATE SERVICE
 22/tcp   open  ssh
