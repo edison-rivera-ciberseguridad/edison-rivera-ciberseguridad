@@ -24,37 +24,33 @@ Como primer punto, identificamos la dirección IP de la **`Máquina Vulnyx`**
 root@kali> arp-scan -I eth0 --local --ignoredups
 
 <SNIP>
-192.168.100.72	08:00:27:c6:4f:1d	PCS Systemtechnik GmbH
+192.168.100.74	08:00:27:c6:4f:1d	PCS Systemtechnik GmbH
 ```
 
 a. Enumeramos los puertos que están abiertos.
 
 ```bash
-❯ nmap -p- -sS --min-rate 5000 -Pn -n 192.168.100.72 -oG ports
+❯ nmap -p- -sS --min-rate 5000 -Pn -n 192.168.100.74 -oG ports
 
-PORT     STATE SERVICE
-22/tcp   open  ssh
-80/tcp   open  http
-8080/tcp open  http-proxy
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
 ```
 
 b. Vemos las versiones de los servicios que se están ejecutando
 
 ```bash
-❯ nmap -p22,80,8080 -sCV 192.168.100.72 -oN versions
+❯ nmap -p22,80 -sCV 192.168.100.74 -oN versions
 
-PORT     STATE SERVICE VERSION
-22/tcp   open  ssh     OpenSSH 9.2p1 Debian 2+deb12u1 (protocol 2.0)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
 | ssh-hostkey: 
-|   256 0e:95:f2:88:f3:0f:ca:38:ec:da:3c:c0:cd:19:20:41 (ECDSA)
-|_  256 53:21:e1:34:a6:f0:70:2b:87:e7:cf:3d:6b:85:9d:64 (ED25519)
-80/tcp   open  http    nginx 1.22.1
+|   3072 f0:e6:24:fb:9e:b0:7a:1a:bd:f7:b1:85:23:7f:b1:6f (RSA)
+|   256 99:c8:74:31:45:10:58:b0:ce:cc:63:b4:7a:82:57:3d (ECDSA)
+|_  256 60:da:3e:31:38:fa:b5:49:ab:48:c3:43:2c:9f:d1:32 (ED25519)
+80/tcp open  http    nginx 1.18.0
 |_http-title: Welcome to nginx!
-|_http-server-header: nginx/1.22.1
-8080/tcp open  http    nginx 1.22.1
-|_http-server-header: nginx/1.22.1
-|_http-title: Did not follow redirect to http://air.nyx:8080/
-|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: nginx/1.18.0
 ```
 
 * Vemos el dominio `air.nyx` el cual añadimos el `/etc/hosts`
