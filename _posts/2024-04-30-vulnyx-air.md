@@ -3,7 +3,7 @@ title: Vulnyx - Air
 author: estx
 date: 2024-05-04 12:10:00 +0800
 categories: [Writeup, Vulnyx, Easy]
-tags: [Linux, 'File Upload', 'Binary Abusing', 'Nginx']
+tags: [Linux, 'File Upload', 'Information Leakage', 'Aircrack']
 math: true
 mermaid: true
 image:
@@ -14,7 +14,7 @@ image:
 
 Máquina Linux de nivel **Easy** de Vulnyx.
 
-Técnicas usadas: **File Upload, Binary Abusing**
+Técnicas usadas: **File Upload, Information Leakage, Aircrack**
 
 ### Fase de Reconocimiento 🧣
 
