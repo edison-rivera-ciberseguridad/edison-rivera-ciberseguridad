@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   Posts sobre ciberseguridad, técnicas y writeups de HackTheBox y Vulnhub.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://edison-rivera-ciberseguridad.github.io/"
+url: "https://edison-rivera-ciberseguridad.github.io"
 
 github:
   username: edisonrivera # change to your github username
