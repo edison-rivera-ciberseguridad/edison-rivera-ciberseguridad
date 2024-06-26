@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: "https://edisonrivera.github.io/"
+baseurl: "https://edison-rivera-ciberseguridad.github.io/"
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   Posts sobre ciberseguridad, técnicas y writeups de HackTheBox y Vulnhub.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://edisonrivera.github.io/"
+url: "https://edison-rivera-ciberseguridad.github.io"
 
 github:
   username: edisonrivera # change to your github username
@@ -36,7 +36,7 @@ twitter:
 
 author:
   name: estx
-  url: https://github.com/edisonrivera
+  url: https://github.com/edison-rivera-ciberseguridad
 
 
 
@@ -48,7 +48,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/edisonrivera # change to your github homepage
+    - https://github.com/edisonrivedison-rivera-ciberseguridad # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
